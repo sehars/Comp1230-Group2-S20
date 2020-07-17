@@ -7,10 +7,11 @@
 
 import java.util.*;  
 
-public class AngryDuck extends WaterFowl implements Teleporter
+public class AngryDuck extends WaterFowl implements Teleporter, Attacker
 {
      protected int coordX = 500;
      protected int coordY = 0;
+     protected int count;
      
      public AngryDuck(String name, String color)
      {
@@ -29,6 +30,24 @@ public class AngryDuck extends WaterFowl implements Teleporter
           coordX = random.nextInt(upperBoundX - lowerBoundX + 1) + lowerBoundX;
           coordY = random.nextInt(upperBoundY + 1) ; 
           return getPosition();
+     }
+     
+     public void attack(Animal prey);
+     {
+          if(prey.health > 0)
+          {
+               System.out.println("Attacking");
+               prey.hit();
+          }
+          if(prey.health == 0)
+          {
+               count++;
+          }
+     }
+     
+     public int getKillCount();
+     {
+          return count;
      }
      
      public String getPosition()
