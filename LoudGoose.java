@@ -26,7 +26,7 @@ public class LoudGoose extends WaterFowl implements Attacker
           }
      }
      public int getKillCount();
-     /*{
+     {
           return count;
-     }*/
+     }
 }
