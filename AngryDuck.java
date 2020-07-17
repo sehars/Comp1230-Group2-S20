@@ -26,8 +26,8 @@ public class AngryDuck extends WaterFowl implements Teleporter
                    
           Random random = new Random();
           
-          coordX = random.nextInt(upperBoundX - lowerBoundX) + lowerBoundX;
-          coordY = random.nextInt(upperBoundY - lowerBoundY) + lowerBoundY; 
+          coordX = random.nextInt(upperBoundX - lowerBoundX + 1) + lowerBoundX;
+          coordY = random.nextInt(upperBoundY + 1) ; 
           return getPosition();
      }
      
