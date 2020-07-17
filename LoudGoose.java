@@ -6,10 +6,11 @@
 
 public class LoudGoose extends WaterFowl implements Attacker
 {
+     protected int count;
+     
      public LoudGoose(String name, String color)
      {
           super(name, color);
-          int count
      }
      
      public void attack(Animal prey);
