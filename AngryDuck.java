@@ -4,7 +4,6 @@
 // Assignment 4
 //********************************************************************
 
-
 import java.util.*;  
 
 public class AngryDuck extends WaterFowl implements Teleporter, Attacker
