@@ -7,6 +7,7 @@
 public abstract class WaterFowl extends Animal
 {
      private boolean state;
+     private int killCount;
      
      public WaterFowl(String name, String color)
      {
@@ -28,6 +29,24 @@ public abstract class WaterFowl extends Animal
           }
      }
      
+     public void attack(Animal prey);
+     {
+          if(prey.health > 0)
+          {
+               System.out.println("Attacking");
+               prey.hit();
+          }
+          if(prey.health == 0)
+          {
+               killCount++;
+          }
+     }
+     
+     
+     public int getKillCount();
+     {
+          return killCount;
+     }
      
      public boolean getFlyState()
      {
