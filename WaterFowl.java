@@ -29,21 +29,27 @@ public abstract class WaterFowl extends Animal
           }
      }
      
-     public void attack(Animal prey);
+     public void attack(Animal prey)
      {
-          if(prey.health > 0)
+          if(prey.getClass().getSimpleName() != this.getClass().getSimpleName())
           {
-               System.out.println("Attacking");
-               prey.hit();
+               if(prey.health > 0)
+               {
+                    System.out.println("Attacking");
+                    prey.hit();
+               }
+               if(prey.health == 0)
+               {
+                    killCount++;
+               }
           }
-          if(prey.health == 0)
-          {
-               killCount++;
-          }
+          else
+               System.out.println("Cannot perform action");
+          
      }
      
      
-     public int getKillCount();
+     public int getKillCount()
      {
           return killCount;
      }
