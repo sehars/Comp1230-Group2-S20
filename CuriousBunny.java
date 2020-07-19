@@ -18,13 +18,13 @@ public class CuriousBunny extends Animal implements Teleporter
           int lowerBoundY = 0;
           int upperBoundY = 1000;
           
-          System.out.println(" Which point do you want to move to?(the x coordinate)");
+          System.out.println(" Which point do you want to move to?(the x coordinate, between 0-499)");
           Scanner sc1 = new Scanner(System.in);
-          System.out.println(" Which point do you want to move to?(the y coordinate)");
+          System.out.println(" Which point do you want to move to?(the y coordinate, between 0-1000)");
           Scanner sc2 = new Scanner(System.in);
           
-          coordx = sc1.nextInt();
-          coordy = sc2.nextInt();
+          coordX = sc1.nextInt();
+          coordY = sc2.nextInt();
           
           return getPosition();
      }
