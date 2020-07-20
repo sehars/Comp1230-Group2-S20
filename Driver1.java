@@ -15,43 +15,50 @@ public class Driver1 {
     LoudGoose goose1 = new LoudGoose("Grima", "Beige");    
     
     System.out.println("Testing the Teleporting and the location methods");
-    bunny1.teleport();
+    System.out.println("TELEPORT %s - Coordinates after teleporting are: %s \n", bunny1.getName(), bunny1.teleport());
     duck1.teleport();
-    duck1.getPosition();
+    System.out.println(bunny1.getPosition());
     bunny1.getPosition();
     System.out.println("");
 
+    System.out.println("TELEPORT %s - Coordinates after teleporting are: %s \n", duck1.getName(), duck1.teleport());
     bunny1.teleport();
     duck1.teleport();
     duck1.getPosition();
-    bunny1.getPosition();
+    System.out.println(duck1.getPosition());
     System.out.println("");
         
         
     System.out.println("Testing the attack methods for the animals:");
+    System.out.println("Duck attack bunny");
+    System.out.println(duck1.attack(bunny1));
+    System.out.println("Duck attack pig");
+    System.out.println(duck1.attack(pig1));
     duck1.attack(bunny1);
-    duck1.attack(pig1);
     duck1.attack(bunny1);
-    duck1.attack(bunny1);
-    duck1.attack(bunny1);
-
+    
     System.out.println("\nTrying to attack the same team:");
-    duck1.attack(duck1);
-    goose1.attack(goose1);
+    System.out.println("Duck attack duck");
+    System.out.println(duck1.attack(duck1));
+    System.out.println("Goose attack goose");
+    System.out.println(goose1.attack(goose1));
         
     System.out.println("");
+    System.out.println(“Goose attack duck”);
     goose1.attack(duck1);
     goose1.attack(duck1);
     goose1.attack(duck1);
 
 
     System.out.println("\nTrying to teleport a bunny and the duck after dying:");
-    bunny1.teleport();
-    duck1.teleport();
+    System.out.println(bunny1.teleport());
+    System.out.println(duck1.teleport());
 
     System.out.println("\nTesting the killcount methods:");
-    goose1.getKillCount();
-    duck1.getKillCount();
+    System.out.println("The count of goose get killed");
+    System.out.println(goose1.getKillCount());
+    System.out.println("The count of duck get killed");
+    System.out.println(duck1.getKillCount());
 
     
   }
