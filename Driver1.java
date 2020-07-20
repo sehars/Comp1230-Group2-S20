@@ -45,8 +45,7 @@ public class Driver1 {
         
     System.out.println("");
     System.out.println(“Goose attack duck”);
-    goose1.attack(duck1);
-    goose1.attack(duck1);
+    System.out.println(goose1.attack(duck1));
     goose1.attack(duck1);
 
 
