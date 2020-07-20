@@ -1,7 +1,6 @@
 //********************************************************************
 // CuriousBunny.java - class 
-// Author: Sehar Talat (T00223475)
-// Groupwork by： Yiting Xiao
+// Groupwork by Yiting Xiao
 // Assignment 4
 //********************************************************************
 import java.util.*;  
