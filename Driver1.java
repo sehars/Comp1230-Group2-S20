@@ -1,6 +1,9 @@
-/**
- * Auto Generated Java Class.
- */
+//********************************************************************
+// Driver1.java - program 
+// Author: Dongyuan Lu(T00587914)
+// Group Assignment
+//********************************************************************
+
 public class Driver1 {
   
   
