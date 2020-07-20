@@ -17,17 +17,21 @@ public class AngryDuck extends WaterFowl implements Teleporter
      }  
      
      public String teleport()
-     {
-          int lowerBoundX = 500;
-          int upperBoundX = 1000;         
-          int lowerBoundY = 0;
-          int upperBoundY = 1000;
-                   
-          Random random = new Random();
-          
-          coordX = random.nextInt(upperBoundX - lowerBoundX + 1) + lowerBoundX;
-          coordY = random.nextInt(upperBoundY + 1) ; 
-          return getPosition();
+     {         
+          displayAction("Teleporting");
+          if (health > 0)
+          {
+               int lowerBoundX = 500;
+               int upperBoundX = 1000;         
+               int lowerBoundY = 0;
+               int upperBoundY = 1000;
+               
+               Random random = new Random();
+               
+               coordX = random.nextInt(upperBoundX - lowerBoundX + 1) + lowerBoundX;
+               coordY = random.nextInt(upperBoundY + 1) ; 
+          }
+          return getPosition();          
      }
      
      public String getPosition()
@@ -36,3 +40,5 @@ public class AngryDuck extends WaterFowl implements Teleporter
      }
      
 }
+
+
