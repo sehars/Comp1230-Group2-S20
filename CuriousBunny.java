@@ -28,7 +28,6 @@ public class CuriousBunny extends Animal implements Teleporter
           coordY = random.nextInt(upperBoundY + 1) ;
           } 
           return getPosition();
-         else System.out.println("Bunny is dead.");
      }
      
      public String getPosition()
