@@ -15,14 +15,14 @@ public class Driver1 {
     LoudGoose goose1 = new LoudGoose("Grima", "Beige");    
     
     System.out.println("Testing the Teleporting and the location methods");
-    bunny1.teleBunny();
-    duck1.teleDuck();
+    bunny1.teleport();
+    duck1.teleport();
     duck1.getPosition();
     bunny1.getPosition();
     System.out.println("");
 
-    bunny1.teleBunny();
-    duck1.teleDuck();
+    bunny1.teleport();
+    duck1.teleport();
     duck1.getPosition();
     bunny1.getPosition();
     System.out.println("");
@@ -46,8 +46,8 @@ public class Driver1 {
 
 
     System.out.println("\nTrying to teleport a bunny and the duck after dying:");
-    bunny1.teleBunny();
-    duck1.teleDuck();
+    bunny1.teleport();
+    duck1.teleport();
 
     System.out.println("\nTesting the killcount methods:");
     goose1.getKillCount();
