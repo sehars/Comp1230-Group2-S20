@@ -1,10 +1,10 @@
 //********************************************************************
 // WaterFowl.java - class 
-// Author: Sehar Talat (T00223475)
+// Author: Gideon Oaikhena (T00611917)
 // Assignment 4
 //********************************************************************
 
-public abstract class WaterFowl extends Animal
+public abstract class WaterFowl extends Animal implements Attacker
 {
      private boolean state;
      private int killCount;
@@ -35,18 +35,18 @@ public abstract class WaterFowl extends Animal
           {
                if(prey.health == 0)
                {
-                    System.out.println("%s already dead \n" + prey.name);
+                    System.out.printf("%s already dead \n", prey.name);
                }
                else if (prey.health == 1)
                {
+                    System.out.printf("Attacking %s \n", prey.name);
                     prey.hit();
                     this.killCount++;
-                    System.out.println("Attacking %s \n" + prey.name);
                }
                else
                {
+                    System.out.printf("Attacking %s \n", prey.name);
                     prey.hit();
-                    System.out.println("Attacking %s \n" + prey.name);
                }
           }
           else
