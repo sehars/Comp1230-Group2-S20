@@ -14,17 +14,21 @@ public class Driver1 {
     AngryDuck duck1 = new AngryDuck("Denethor", "Yellow");            
     LoudGoose goose1 = new LoudGoose("Grima", "Beige");    
     
+    System.out.printf("Total number of animals is: %d \n\n" , Animal.getCount());
+    
     System.out.println("Testing the Teleporting and the location methods");
-    System.out.println("TELEPORT %s - Coordinates after teleporting are: %s \n");
+    System.out.printf("TELEPORT %s - Coordinates after teleporting are: %s \n", duck1.getName(), duck1.teleport());
+    System.out.printf("TELEPORT %s - Coordinates after teleporting are: %s \n", bunny1.getName(), bunny1.teleport());
     bunny1.getName();
-    duck1.teleport();
+    
     System.out.println(bunny1.getPosition());
     bunny1.getPosition();
     System.out.println("");
 
-    System.out.println("TELEPORT %s - Coordinates after teleporting are: %s \n");
+    
     duck1.getName();
     bunny1.teleport();
+    System.out.println(bunny1.getPosition());
     duck1.teleport();
     duck1.getPosition();
     System.out.println(duck1.getPosition());
@@ -49,6 +53,7 @@ public class Driver1 {
     System.out.println("Goose attack duck");
     goose1.attack(duck1);
     goose1.attack(duck1);
+    goose1.attack(duck1);
 
 
     System.out.println("\nTrying to teleport a bunny and the duck after dying:");
@@ -61,6 +66,7 @@ public class Driver1 {
     System.out.println("The count of duck get killed");
     System.out.println(duck1.getKillCount());
 
+    System.out.printf("Total number of animals is: %d \n\n" , Animal.getCount());
     
   }
   

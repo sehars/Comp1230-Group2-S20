@@ -1,7 +1,7 @@
 //********************************************************************
 // AngryDuck.java - class 
 // Author: Sehar Talat (T00223475)
-// Assignment 4
+// Group Project 1
 //********************************************************************
 
 import java.util.*;  
@@ -18,7 +18,7 @@ public class AngryDuck extends WaterFowl implements Teleporter
      
      public String teleport()
      {         
-          displayAction("Teleporting");
+          displayAction(" Teleporting");
           if (health > 0)
           {
                int lowerBoundX = 500;

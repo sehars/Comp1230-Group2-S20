@@ -39,13 +39,13 @@ public abstract class WaterFowl extends Animal implements Attacker
                }
                else if (prey.health == 1)
                {
-                    System.out.printf("Attacking %s \n", prey.name);
+                    System.out.printf("%s Attacking %s \n", this.name, prey.name);
                     prey.hit();
                     this.killCount++;
                }
                else
                {
-                    System.out.printf("Attacking %s \n", prey.name);
+                    System.out.printf("%s Attacking %s \n", this.name, prey.name);
                     prey.hit();
                }
           }

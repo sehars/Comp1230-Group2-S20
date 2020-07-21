@@ -1,7 +1,7 @@
 //********************************************************************
 // LoudGoose.java - class 
 // Author: Sehar Talat (T00223475)
-// Assignment 4
+// Group Project 1
 //********************************************************************
 
 public class LoudGoose extends WaterFowl

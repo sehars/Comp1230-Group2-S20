@@ -13,7 +13,7 @@ public class CuriousBunny extends Animal implements Teleporter
    
      public String teleport()
      {
-        displayAction("Teleporting");
+        displayAction(" Teleporting");
         if (health > 0)
         {
           int lowerBoundX = 0;
